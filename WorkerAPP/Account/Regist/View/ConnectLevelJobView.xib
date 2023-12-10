@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConnectLevelJobView" customModule="WorkerAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="_containerView" destination="iN0-l3-epB" id="GFU-ww-eBm"/>
+                <outlet property="titleLabel" destination="Er6-Vw-7HL" id="LU2-FT-bjh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="301"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-re-5ry">
+                    <rect key="frame" x="0.0" y="59" width="393" height="208"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-idea" translatesAutoresizingMaskIntoConstraints="NO" id="Qw3-Il-CQ4">
+                            <rect key="frame" x="12" y="8" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="BU3-YX-m6w"/>
+                                <constraint firstAttribute="width" constant="20" id="dEY-Dn-c5g"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ấn vào đây để xác định được cấp bậc nghề nghiệp của bản thânẤn vào đây để xác định được cấp bậc nghề nghiệp của bản thân" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er6-Vw-7HL">
+                            <rect key="frame" x="44" y="8.0000000000000036" width="337" height="50.333333333333343"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="12" bottom="8" trailing="12"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.90588235294117647" green="0.98039215686274506" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RGe-re-5ry" secondAttribute="bottom" priority="999" id="6vO-NC-uXJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RGe-re-5ry" secondAttribute="trailing" id="WYf-zz-VOQ"/>
+                <constraint firstItem="RGe-re-5ry" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Zpy-Gf-ozz"/>
+                <constraint firstItem="RGe-re-5ry" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nyH-Xx-K1i"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="182.04225352112678"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-idea" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailLevelView" customModule="WorkerAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="_containerView" destination="iN0-l3-epB" id="lK1-Ar-bsK"/>
+                <outlet property="jobImageView" destination="Xuh-ua-Ly3" id="fdA-oc-WeV"/>
+                <outlet property="jobNameView" destination="V6z-HU-anx" id="R5F-lT-nLq"/>
+                <outlet property="knowledgeTitle" destination="425-oW-hfX" id="tY7-e7-7qh"/>
+                <outlet property="knowledgeValue" destination="Pxq-uP-DQw" id="7nx-zw-NeX"/>
+                <outlet property="levelButton" destination="9Hh-B4-rbv" id="1mT-nL-Afm"/>
+                <outlet property="levelTitleLabel" destination="pxo-Hl-mFX" id="3kI-zn-GvQ"/>
+                <outlet property="practiceTitle" destination="pvS-29-I9z" id="lFM-Qs-ZUd"/>
+                <outlet property="practiceValue" destination="wUH-Az-a9M" id="tXw-gz-EXT"/>
+                <outlet property="priceLabel" destination="mZr-Wm-f4I" id="DOy-w7-ohV"/>
+                <outlet property="selectButton" destination="UcD-tH-TLF" id="LxK-Rn-JQd"/>
+                <outlet property="skillTitleLabel" destination="AlV-bR-A27" id="JgS-ko-dWl"/>
+                <outlet property="textView" destination="GjN-gD-4LJ" id="BTE-ku-3Jf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="1631"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eYF-WD-cfn">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="1631"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-DF-aqd">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="442.66666666666669"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job-car" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-ua-Ly3">
+                                    <rect key="frame" x="0.0" y="195.33333333333334" width="52" height="52"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="HSc-ng-u7k"/>
+                                        <constraint firstAttribute="width" constant="52" id="W3u-vU-0uL"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-vH-pdX">
+                                    <rect key="frame" x="64" y="194.33333333333334" width="329" height="54.333333333333343"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6z-HU-anx">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcD-tH-TLF" customClass="AppBaseButton" customModule="UIComponents">
+                                            <rect key="frame" x="0.0" y="24.333333333333314" width="329" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZQ-Cs-7uM">
+                            <rect key="frame" x="0.0" y="454.66666666666669" width="393" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxo-Hl-mFX">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hh-B4-rbv" customClass="Button" customModule="UIComponents">
+                                    <rect key="frame" x="293" y="0.0" width="100" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="1xG-mc-5q6"/>
+                                        <constraint firstAttribute="width" constant="100" id="fBc-oK-mES"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZr-Wm-f4I">
+                            <rect key="frame" x="0.0" y="514.66666666666663" width="393" height="20.333333333333371"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlV-bR-A27">
+                            <rect key="frame" x="0.0" y="547" width="393" height="20.333333333333371"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-gD-4LJ" customClass="TextView" customModule="UIComponents">
+                            <rect key="frame" x="0.0" y="579.33333333333337" width="393" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="425-oW-hfX">
+                            <rect key="frame" x="0.0" y="641.33333333333337" width="393" height="20.333333333333371"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxq-uP-DQw">
+                            <rect key="frame" x="0.0" y="673.66666666666663" width="393" height="324.66666666666663"/>
+                            <mutableString key="text">Hiểu biết:
+
+- Đọc bản vẽ phần xây dựng, tổ chức quản lý tốt một tổ thợ thi công các loại nhà có yêu cầu cao về các việc thuộc nghề nề đạt chất lượng kĩ thuật, vật tư sử dụng hợp lí, đảm bảo an toàn.
+
+- Giác móng theo bản vẽ cho các loại nhà ở (không dùng máy trắc đạc) thông thường.
+
+- Chống thấm bằng bi tum và các loại vật liệu khác theo đúng yêu cầu kĩ thuật.
+
+- Có biện pháp xử lý, sửa chữa các hư hỏng thông thường thuộc nghề nề (không thuộc về xử lý kết cấu chịu lực).</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvS-29-I9z">
+                            <rect key="frame" x="0.0" y="1010.3333333333334" width="393" height="20.333333333333371"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUH-Az-a9M">
+                            <rect key="frame" x="0.0" y="1042.6666666666667" width="393" height="588.33333333333326"/>
+                            <mutableString key="text">Làm được:
+
+- Xây tường, xây trụ tròn, vuông bằng gạch để trần không trát.
+
+- Xây lò hơi, ống khói cao 25m trở xuống theo bản vẽ, xây gạch chịu lửa (cả gia công gạch) ở bộ phận phức tạp.
+
+- Lắp đặt thiết bị vệ sinh.
+
+- Pha chế mầu và trát granito có kẻ ô hoặc xen hoa văn trang trí, trát granitin chuẩn xác.
+
+- Làm ban công, ô văng có đường cong, trát các loại gờ chỉ, phào phức tạp.
+
+- Hoàn thiện nhà bằng công nghệ bả matít, mài và lăn sơn theo các mẫu.
+
+- Đánh nivô, bố trí hoa văn, bắt mỏ lát gạch hoa các mầu, ốp đá, gạch men cho công trình có yêu cầu kĩ thuật cao.
+
+- Gia công và ốp các loại gạch đá trang trí cho cột, mặt tường, đắp chữ lồi lõm đảm bảo kĩ mĩ thuật.
+
+- Chống thấm mái và các khu vệ sinh, xử lý chống thấm dột đúng yêu cầu kĩ thuật.</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eYF-WD-cfn" secondAttribute="bottom" id="41i-Fs-og2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eYF-WD-cfn" secondAttribute="trailing" id="W2M-js-0hV"/>
+                <constraint firstItem="eYF-WD-cfn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fie-zH-d0x"/>
+                <constraint firstItem="eYF-WD-cfn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="txF-tr-dkl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-129.00763358778624" y="-50.352112676056343"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="job-car" width="106" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

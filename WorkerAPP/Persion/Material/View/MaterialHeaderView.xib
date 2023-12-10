@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaterialHeaderView" customModule="WorkerAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="_containerView" destination="iN0-l3-epB" id="agz-ob-1np"/>
+                <outlet property="addButton" destination="wUr-Tv-JMA" id="VkY-5L-60M"/>
+                <outlet property="headerTitle" destination="lSh-Xm-jWC" id="oFB-Se-Fb1"/>
+                <outlet property="searchView" destination="ZTw-kY-iYn" id="8lP-85-r4k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="279"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jXc-ab-GEG">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="245"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6xH-s8-XBy">
+                            <rect key="frame" x="16" y="71" width="361" height="20.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thêm vật liệu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-Xm-jWC">
+                                    <rect key="frame" x="0.0" y="0.0" width="285" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUr-Tv-JMA" customClass="AppBaseButton" customModule="UIComponents">
+                                    <rect key="frame" x="301" y="0.0" width="60" height="20.333333333333332"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="pMk-ex-emq"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="plus-blue"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="ZTw-kY-iYn" customClass="SearchField" customModule="UIComponents">
+                            <rect key="frame" x="16" y="107.33333333333331" width="361" height="125.66666666666669"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="12" leading="16" bottom="12" trailing="16"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jXc-ab-GEG" secondAttribute="trailing" id="X0O-0b-6SO"/>
+                <constraint firstItem="jXc-ab-GEG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cXP-zZ-cg2"/>
+                <constraint firstItem="jXc-ab-GEG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hDV-uK-ggT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jXc-ab-GEG" secondAttribute="bottom" priority="999" id="wwR-la-cXy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="46.564885496183201" y="190.49295774647888"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus-blue" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
