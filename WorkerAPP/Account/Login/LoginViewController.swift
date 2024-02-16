@@ -22,6 +22,8 @@ class LoginViewController : BaseViewController, MVVMViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
+        
+        // test ciu
     }
     
     @objc private func demo() {
