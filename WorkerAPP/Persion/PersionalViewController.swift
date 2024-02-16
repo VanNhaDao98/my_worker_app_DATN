@@ -42,9 +42,6 @@ class PersionalViewController: BaseViewController, MVVMViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        config()
-        fdsgfd
-        
-        // demo
     }
     
     func setupView() {
