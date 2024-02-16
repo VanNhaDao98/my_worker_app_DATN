@@ -24,6 +24,8 @@ class LoginViewController : BaseViewController, MVVMViewController {
         config()
         
         // test ciu
+        
+        // test second
     }
     
     @objc private func demo() {
