@@ -103,7 +103,7 @@ class PersionalViewController: BaseViewController, MVVMViewController {
         
         supportView.action = .init(passwordAction: { [weak self] in
             self?.viewModel.send(.updatePassword)
-        }, supportAction: { [weak self] in
+        }, supportAction: {
             Utility.call(phoneNumber: "0962001538")
         })
         

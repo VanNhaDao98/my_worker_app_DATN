@@ -202,12 +202,12 @@ extension HomeViewModel {
                 }
             }
             var money: Double = 0
-            var customerCount: Int = orderCurrent.reduce(into: [String]()) { result, order in
+            let customerCount: Int = orderCurrent.reduce(into: [String]()) { result, order in
                 if !result.contains(order.customer?.id ?? "") {
                     result.append(order.customer?.id ?? "")
                 }
             }.count
-            var cancelOrder: Int =  orderCurrent.filter({ $0.status == .cancel}).count
+            let cancelOrder: Int =  orderCurrent.filter({ $0.status == .cancel}).count
             
             for order in orderCurrent {
                 money += order.price
