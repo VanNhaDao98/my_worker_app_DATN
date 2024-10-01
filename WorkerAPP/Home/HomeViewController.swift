@@ -92,7 +92,7 @@ class HomeViewController: BaseViewController, MVVMViewController {
                 codeValue = code ?? ""
             })
             
-            Popup.show(present: tabbar, customView: view)
+            Popup.showCustomView(customView: view)
         }
         
         acceptJobView.valueDidChange = { [weak self] value in

@@ -89,7 +89,7 @@ class MaterialViewController: BaseViewController, MVVMViewController {
                 material.updatePrice(price: Formatter.shared.number(from: price))
             })
             
-            Popup.show(present: self, customView: editView)
+            Popup.showCustomView(customView: editView)
 
         }, didUpdateMaterial: { [weak self] in
             self?.didUpdate()
