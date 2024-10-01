@@ -108,7 +108,7 @@ class OrderDetailViewController: BaseViewController, MVVMViewController {
             Popup.showConfirmValue(title: "Hủy yêu cầu",subTitle: "Bạn có chắc chắn muốn hủy?", confirmAction: {
                 Popup.hide()
                 self.viewModel.send(.cancel)
-            }, present: self.tabBarController!)
+            })
         }
         
         editButton.isHidden = true

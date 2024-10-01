@@ -228,9 +228,11 @@
 		D071CD3A2AD5C25F00EE6714 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071CD382AD5C25F00EE6714 /* RegisterAccountViewController.swift */; };
 		D071CD432AD5CD6500EE6714 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071CBEF2AD2F01000EE6714 /* Domain.framework */; };
 		D071CD442AD5CD6500EE6714 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D071CBEF2AD2F01000EE6714 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D08193F32CAC57660074F739 /* BaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08193F22CAC57660074F739 /* BaseWindow.swift */; };
+		D08193F52CAC594C0074F739 /* AnimatedWIndow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08193F42CAC594C0074F739 /* AnimatedWIndow.swift */; };
+		D08193F72CAC5C280074F739 /* PopupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08193F62CAC5C280074F739 /* PopupWindow.swift */; };
 		D09414C62AD861AE0008AD9E /* CustomWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09414C52AD861AE0008AD9E /* CustomWarningView.swift */; };
 		D09414C82AD861D20008AD9E /* CustomWarningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09414C72AD861D20008AD9E /* CustomWarningView.xib */; };
-		D09414CA2AD867970008AD9E /* BaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09414C92AD867970008AD9E /* BaseWindow.swift */; };
 		D09414CC2AD8680E0008AD9E /* LoadingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09414CB2AD8680E0008AD9E /* LoadingWindow.swift */; };
 		D09415172AD87A950008AD9E /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D09415162AD87A950008AD9E /* JGProgressHUD */; };
 		D09415192AD87B1C0008AD9E /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09415182AD87B1C0008AD9E /* Loading.swift */; };
@@ -798,9 +800,11 @@
 		D071CD322AD5C0DC00EE6714 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D071CD362AD5C1F800EE6714 /* RegisterAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewModel.swift; sourceTree = "<group>"; };
 		D071CD382AD5C25F00EE6714 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
+		D08193F22CAC57660074F739 /* BaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindow.swift; sourceTree = "<group>"; };
+		D08193F42CAC594C0074F739 /* AnimatedWIndow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedWIndow.swift; sourceTree = "<group>"; };
+		D08193F62CAC5C280074F739 /* PopupWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindow.swift; sourceTree = "<group>"; };
 		D09414C52AD861AE0008AD9E /* CustomWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWarningView.swift; sourceTree = "<group>"; };
 		D09414C72AD861D20008AD9E /* CustomWarningView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWarningView.xib; sourceTree = "<group>"; };
-		D09414C92AD867970008AD9E /* BaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindow.swift; sourceTree = "<group>"; };
 		D09414CB2AD8680E0008AD9E /* LoadingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingWindow.swift; sourceTree = "<group>"; };
 		D09415182AD87B1C0008AD9E /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		D09415292AD92F070008AD9E /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
@@ -1270,6 +1274,9 @@
 			children = (
 				D06664862AF4002000788B89 /* Popup.swift */,
 				D06664882AF4004C00788B89 /* ConfirmPopupView.swift */,
+				D08193F22CAC57660074F739 /* BaseWindow.swift */,
+				D08193F42CAC594C0074F739 /* AnimatedWIndow.swift */,
+				D08193F62CAC5C280074F739 /* PopupWindow.swift */,
 			);
 			path = Popup;
 			sourceTree = "<group>";
@@ -1661,7 +1668,6 @@
 			isa = PBXGroup;
 			children = (
 				D071CCCB2AD3B58500EE6714 /* Button.swift */,
-				D09414C92AD867970008AD9E /* BaseWindow.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -2955,11 +2961,11 @@
 				D09414CC2AD8680E0008AD9E /* LoadingWindow.swift in Sources */,
 				D0C870E22ADC4673005314AD /* SearchField.swift in Sources */,
 				D0C870E02ADC43BC005314AD /* UIScrollView+Exts.swift in Sources */,
+				D08193F72CAC5C280074F739 /* PopupWindow.swift in Sources */,
 				D01E9E162AD9C35D004164EC /* PassthroughView.swift in Sources */,
 				D0A930D12AF7DA65001F32F2 /* DefaultIndicatorView.swift in Sources */,
 				D0C870EC2ADC49CB005314AD /* BottomSheetListView.swift in Sources */,
 				D06664872AF4002000788B89 /* Popup.swift in Sources */,
-				D09414CA2AD867970008AD9E /* BaseWindow.swift in Sources */,
 				D0C871302ADDBDBE005314AD /* LeftRightLabelView.swift in Sources */,
 				D06664D62AF40A2600788B89 /* TextFieldTitle.swift in Sources */,
 				D06664802AF3FF2A00788B89 /* TextView.swift in Sources */,
@@ -2970,6 +2976,7 @@
 				D0C870EE2ADC4B8C005314AD /* BorderedView.swift in Sources */,
 				D0C870D52ADC3A32005314AD /* DefaultPanelLayout.swift in Sources */,
 				D01E9E152AD9C319004164EC /* KeyBoardAvoidingView.swift in Sources */,
+				D08193F32CAC57660074F739 /* BaseWindow.swift in Sources */,
 				D094152A2AD92F070008AD9E /* BottomSheet.swift in Sources */,
 				D06664852AF3FFB900788B89 /* AlertUtils.swift in Sources */,
 				D0C8711C2ADCEF15005314AD /* SwitchLabelView.swift in Sources */,
@@ -2984,6 +2991,7 @@
 				D06664892AF4004C00788B89 /* ConfirmPopupView.swift in Sources */,
 				D0C870F62ADC54DE005314AD /* TagView.swift in Sources */,
 				D0C870FE2ADC5A07005314AD /* BottomSheetEditView.swift in Sources */,
+				D08193F52CAC594C0074F739 /* AnimatedWIndow.swift in Sources */,
 				D066647D2AF3FEED00788B89 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

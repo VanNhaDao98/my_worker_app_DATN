@@ -56,7 +56,7 @@ extension DetailJobWebViewViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         Loading.shared.showLoading(view: self.view)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            Popup.showConfirmValue(title: "Thông báo", subTitle: "Load thông tin thất bại, chúng tôi rất tiếc vì sự cố trên",present: self)
+            Popup.showConfirmValue(title: "Thông báo", subTitle: "Load thông tin thất bại, chúng tôi rất tiếc vì sự cố trên")
         })
     }
     

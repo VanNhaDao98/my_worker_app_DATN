@@ -178,7 +178,7 @@ class PersionalViewController: BaseViewController, MVVMViewController {
                 confirmPassword = value ?? ""
             })
             
-            Popup.show(present: self.tabBarController!, customView: view)
+            Popup.showCustomView( customView: view)
         }))
         viewModel.send(.viewDidLoad)
     }

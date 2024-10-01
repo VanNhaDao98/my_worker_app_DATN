@@ -71,7 +71,7 @@ class LoginViewController : BaseViewController, MVVMViewController {
             }, valueDIdChanged: { value in
                 email = value ?? ""
             })
-            Popup.show(present: self, customView: resetView)
+            Popup.showCustomView(customView: resetView)
         }, emptyAccount: { [weak self] account in
             CreateWorkerGeneralViewController(viewModel: .init(account: account)).push(from: self)
             self?.loginView.isHidden = false

@@ -176,7 +176,7 @@ class DetailPesionalViewController: BaseViewController, MVVMViewController {
                 material.updatePrice(price: Formatter.shared.number(from: price))
             })
             
-            Popup.show(present: self, customView: editView)
+            Popup.showCustomView(customView: editView)
         }, skill: { [weak self] skill in
             self?.skillView.updateView(subTitle: skill)
         }, level: { [weak self] item in
